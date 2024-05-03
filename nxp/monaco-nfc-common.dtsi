@@ -20,6 +20,7 @@
 		reg = <0x28>;
 		qcom,sn-irq = <&tlmm 7 0x00>;
 		qcom,sn-ven = <&tlmm 6 0x00>;
+		qcom,sn-firm = <&tlmm 8 0x00>;
 		qcom,sn-clkreq = <&pm5100_gpios 4 0x00>;
 		qcom,clk-src = "LNBBKCLK3";
 		interrupt-parent = <&tlmm>;

@@ -11,6 +11,7 @@ dtbo-y += st/sun-nfc.dtbo \
           st/sun-nfc-qrd-sku2-v8.dtbo \
           st/sun-nfc-atp.dtbo \
           st/sun-nfc-rcm.dtbo
+endif
 
 ifeq ($(CONFIG_ARCH_MONACO),y)
 dtbo-y += nxp/monaco-nfc.dtbo \
