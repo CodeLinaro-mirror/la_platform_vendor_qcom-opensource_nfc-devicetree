@@ -11,6 +11,11 @@ dtbo-y += st/sun-nfc.dtbo \
           st/sun-nfc-qrd-sku2-v8.dtbo \
           st/sun-nfc-atp.dtbo \
           st/sun-nfc-rcm.dtbo
+
+ifeq ($(CONFIG_ARCH_MONACO),y)
+dtbo-y += nxp/monaco-nfc.dtbo \
+	  nxp/monaco-nfc-standalone-idp-v1.dtbo \
+	  nxp/monaco-nfc-idp-v1.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
