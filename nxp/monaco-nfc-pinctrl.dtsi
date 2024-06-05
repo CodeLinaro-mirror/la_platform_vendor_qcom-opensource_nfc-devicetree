@@ -1,33 +1,4 @@
 &tlmm {
-
-	qupv3_se0_i2c_pins: qupv3_se0_i2c_pins {
-				qupv3_se0_i2c_active: qupv3_se0_i2c_active {
-					mux {
-						pins = "gpio4", "gpio5";
-						function = "qup00";
-					};
-	 
-					config {
-						pins = "gpio4", "gpio5";
-						drive-strength = <2>;
-						bias-pull-up;
-					};
-				};
-	 
-				qupv3_se0_i2c_sleep: qupv3_se0_i2c_sleep {
-					mux {
-						pins = "gpio4", "gpio5";
-						function = "gpio";
-					};
-	 
-					config {
-						pins = "gpio4", "gpio5";
-						drive-strength = <2>;
-						bias-disable;
-					};
-				};
-	};
-
 	nfc {
 			nfc_int_active: nfc_int_active {
 				/* active state */

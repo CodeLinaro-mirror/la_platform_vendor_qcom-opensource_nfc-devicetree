@@ -5,6 +5,6 @@
 / {
 	model = "Qualcomm Technologies, Inc. Monaco";
 	compatible = "qcom,monaco", "qcom,idp";
-	qcom,msm-id = <517 0x10000>;
+	qcom,msm-id = <517 0x10000>, <486 0x10000>;
 	qcom,board-id = <0x010022 0x1>;
 };
