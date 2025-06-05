@@ -38,6 +38,16 @@ dtbo-y += st/canoe-nfc.dtbo \
           nxp/canoe-nfc-sn220.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_YUPIK), y)
+dtbo-y += nxp/yupik-wcn6750-nfc.dtbo
+dtbo-y += nxp/yupik-qca6490-nfc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_ALOR),y)
+dtbo-y += nxp/alor-nfc.dtbo
+dtbo-y += st/alor-nfc.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
