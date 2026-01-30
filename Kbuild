@@ -32,15 +32,37 @@ ifeq ($(CONFIG_ARCH_RAVELIN),y)
 dtbo-y += nxp/ravelin-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_MALABAR), y)
+dtbo-y += st/malabar-nfc.dtbo \
+          nxp/malabar-nfc-sn220.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_CANOE), y)
 dtbo-y += st/canoe-nfc.dtbo \
           nxp/canoe-nfc.dtbo \
           nxp/canoe-nfc-sn220.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CHORA),y)
+dtbo-y += nxp/chora-nfc.dtbo \
+          st/chora-nfc.dtbo
+endif
+
+
 ifeq ($(CONFIG_ARCH_YUPIK), y)
-dtbo-y += nxp/yupik-wcn6750-nfc.dtbo
-dtbo-y += nxp/yupik-qca6490-nfc.dtbo
+dtbo-y += nxp/yupik-nfc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_LAHAINA), y)
+dtbo-y += nxp/lahaina-nfc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_BENGAL),y)
+dtbo-y += nxp/bengal-nfc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_KHAJE),y)
+dtbo-y += nxp/khaje-nfc.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_ALOR),y)
