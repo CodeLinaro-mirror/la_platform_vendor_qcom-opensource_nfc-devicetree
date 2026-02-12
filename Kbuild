@@ -70,6 +70,13 @@ dtbo-y += nxp/alor-nfc.dtbo
 dtbo-y += st/alor-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_SHIKRA),y)
+dtbo-y += st/shikra-evk-kunlun-nfc-imxcam-overlay.dtbo \
+          st/shikra-evk-kunlun-nfc-overlay.dtbo \
+          st/shikra-lite-evk-eSMPS-nfc-imxcam-overlay.dtbo \
+          st/shikra-lite-evk-eSMPS-nfc-overlay.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
