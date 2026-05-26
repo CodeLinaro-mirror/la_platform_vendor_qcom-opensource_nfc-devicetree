@@ -48,6 +48,10 @@ dtbo-y += nxp/chora-nfc.dtbo \
           st/chora-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_BOURTZI),y)
+dtbo-y += nxp/bourtzi-nfc.dtbo \
+          st/bourtzi-nfc.dtbo
+endif
 
 ifeq ($(CONFIG_ARCH_YUPIK), y)
 dtbo-y += nxp/yupik-nfc.dtbo
