@@ -18,8 +18,6 @@
 		qcom,sn-vdd-1p8-voltage = <1800000 1800000>;
 		qcom,sn-vdd-1p8-current = <10000>;
 		interrupt-parent = <&tlmm>;
-                nvmem-cells = <&bob1_off_mode_enable>;
-                nvmem-cell-names = "nfc_bob1_cell";
 		interrupts = <9 0>;
 		interrupt-names = "nfc_irq";
 	};

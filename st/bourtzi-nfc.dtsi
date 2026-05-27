@@ -15,8 +15,6 @@
                 reset-gpios = <&tlmm 4 0x00>;
                 clkreq-gpios = <&tlmm 98 0x00>;
                 interrupt-parent = <&tlmm>;
-                nvmem-cells = <&bob1_off_mode_enable>;
-                nvmem-cell-names = "nfc_bob1_cell";
                 interrupts = <9 0>;
                 interrupt-names = "nfc_irq";
         };
