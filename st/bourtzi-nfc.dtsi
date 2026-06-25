@@ -5,7 +5,6 @@
 
 &qupv3_se8_i2c {
         status = "ok";
-        qcom,clk-freq-out = <1000000>;
         #address-cells = <1>;
         #size-cells = <0>;
         st21nfc: st21nfc@08 {
@@ -15,8 +14,6 @@
                 reset-gpios = <&tlmm 4 0x00>;
                 clkreq-gpios = <&tlmm 98 0x00>;
                 interrupt-parent = <&tlmm>;
-                nvmem-cells = <&bob1_off_mode_enable>;
-                nvmem-cell-names = "nfc_bob1_cell";
                 interrupts = <9 0>;
                 interrupt-names = "nfc_irq";
         };
