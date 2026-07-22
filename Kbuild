@@ -57,6 +57,10 @@ ifeq ($(CONFIG_ARCH_YUPIK), y)
 dtbo-y += nxp/yupik-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_WAIPIO), y)
+dtbo-y += nxp/waipio-nfc-sn100.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_LAHAINA), y)
 dtbo-y += nxp/lahaina-nfc.dtbo
 endif
