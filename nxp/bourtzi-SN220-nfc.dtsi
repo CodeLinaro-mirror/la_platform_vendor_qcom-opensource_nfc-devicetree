@@ -14,8 +14,8 @@
 		qcom,sn-ven = <&tlmm 4 0x00>;
 		qcom,sn-clkreq = <&tlmm 98 0x00>;
 		qcom,sn-vdd-1p8-supply = <&L23B_E0>;
-		qcom,sn-vdd-1p8-voltage = <1800000 1800000>;
-		qcom,sn-vdd-1p8-current = <10000>;
+		qcom,sn-vdd-1p8-voltage = <1650000 1950000>;
+		qcom,sn-vdd-1p8-current = <9999>;
 		interrupt-parent = <&tlmm>;
 		interrupts = <9 0>;
 		interrupt-names = "nfc_irq";
